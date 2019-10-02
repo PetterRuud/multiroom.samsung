@@ -38,7 +38,7 @@
     "url": "https://github.com/PetterRuud/com.scinan.api/issues"
   },
   "discovery": {
-    "heos": {
+    "samsung": {
       "type": "ssdp",
       "id": "{{headers.usn}}",
       "ssdp": {
@@ -57,3 +57,4 @@
       ]
     }
   }
+}
