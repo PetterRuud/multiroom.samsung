@@ -1,3 +1,7 @@
+# Samsung Multiroom
+
+Control Samsung multiroom speakers and soundbars
+
 https://sites.google.com/site/moosyresearch/projects/samsung_shape
 
 https://github.com/DaveGut/SmartThings_Samsung-WiFi-Audio-Unofficial/blob/master/0%20-%20DeviceHandler/Samsung%20WiFi%20Audio%20DH-V4.groovy
@@ -7,3 +11,5 @@ https://github.com/SamsungDForum/SmartViewSDKHelloWorld
 
 
 https://github.com/macbury/ha_samsung_multi_room/blob/master/media_player/samsung_multi_room.py
+
+https://github.com/bacl/WAM_API_DOC

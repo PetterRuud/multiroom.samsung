@@ -1,0 +1,59 @@
+{
+  "id": "wam.multiroom.samsung",
+  "version": "0.0.1",
+  "compatibility": ">=2.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "Samsung Multiroom"
+  },
+  "description": {
+    "en": "Control Samsung multiroom speakers and soundbars"
+  },
+  "category": [
+    "music"
+  ],
+  "tags": {
+    "en": [
+      "Samsung",
+      "Multiroom"
+    ]
+  },
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Petter Ruud",
+    "email": "petterruud@gmail.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "petterruud"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/PetterRuud/com.scinan.api/issues"
+  },
+  "discovery": {
+    "heos": {
+      "type": "ssdp",
+      "id": "{{headers.usn}}",
+      "ssdp": {
+        "search": "urn:schemas-upnp-org:service:AVTransport:1"
+      },
+      "conditions": [
+        [
+          {
+            "field": "headers.st",
+            "match": {
+              "type": "string",
+              "value": "urn:schemas-upnp-org:service:AVTransport:1"
+            }
+          }
+        ]
+      ]
+    }
+  }

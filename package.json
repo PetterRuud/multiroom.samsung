@@ -1,0 +1,17 @@
+{
+  "name": "wam.multiroom.samsung",
+  "version": "0.0.1",
+  "description": "Support Samsung Multiroom Speakers",
+  "main": "app.js",
+  "scripts": {
+    "start": "athom app run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petter Ruud",
+  "license": "ISC",
+  "dependencies": {
+    "homey-log": "1.0.6",
+    "node-fetch": "^2.6.0",
+    "xml-js": "^1.6.11"
+  }
+}
