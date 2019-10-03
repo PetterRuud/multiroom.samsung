@@ -13,3 +13,5 @@ https://github.com/SamsungDForum/SmartViewSDKHelloWorld
 https://github.com/macbury/ha_samsung_multi_room/blob/master/media_player/samsung_multi_room.py
 
 https://github.com/bacl/WAM_API_DOC
+
+https://gist.github.com/fhatz/f5645682f3f1d73583035980a921f59b
