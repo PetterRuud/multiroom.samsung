@@ -9,7 +9,10 @@ const SOURCES = {
 
 const PORT = 55001;
 
+const MAXVOLUME = 100;
+
 module.exports = {
   SOURCES,
   PORT,
+  MAXVOLUME,
 };
