@@ -37,12 +37,69 @@
   "bugs": {
     "url": "https://github.com/PetterRuud/com.scinan.api/issues"
   },
+  "flow": {
+    "actions": [
+      {
+        "id": "play_aux_in",
+        "title": {
+          "en": "Play AUX In",
+          "nl": "Speel AUX In"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=samsung"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "id": "samsung",
+      "name": {
+        "en": "Samsung multiroom"
+      },
+      "class": "speaker",
+      "capabilities": [
+        "speaker_track",
+        "speaker_album",
+        "speaker_artist",
+        "speaker_prev",
+        "speaker_next",
+        "speaker_position",
+        "speaker_repeat",
+        "speaker_shuffle",
+        "speaker_playing",
+        "volume_set",
+        "volume_mute"
+      ],
+      "images": {
+        "large": "/drivers/samsung/assets/images/large.jpg",
+        "small": "/drivers/samsung/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ]
+    }
+  ],
   "discovery": {
     "samsung": {
       "type": "ssdp",
       "id": "{{headers.usn}}",
       "ssdp": {
-        "search": "urn:schemas-upnp-org:service:AVTransport:1"
+        "search": "urn:samsung.com:device:RemoteControlReceiver:1"
       },
       "conditions": [
         [
@@ -50,7 +107,7 @@
             "field": "headers.st",
             "match": {
               "type": "string",
-              "value": "urn:schemas-upnp-org:service:AVTransport:1"
+              "value": "urn:samsung.com:device:RemoteControlReceiver:1"
             }
           }
         ]
