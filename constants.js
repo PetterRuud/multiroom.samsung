@@ -45,6 +45,10 @@ const SOFTWARE = {
   STANDARD: 'Standard',
 };
 
+const ERROR = {
+  FAIL_TO_PLAY: 'fail to play',
+};
+
 const PORT = 55001;
 
 const MAXVOLUME = 100;
@@ -58,4 +62,5 @@ module.exports = {
   TYPE,
   SOFTWARE,
   VOLUMESCALE,
+  ERROR,
 };
