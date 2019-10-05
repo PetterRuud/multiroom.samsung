@@ -1,5 +1,5 @@
 {
-  "id": "wam.multiroom.samsung",
+  "id": "multiroom.samsung",
   "version": "0.0.1",
   "compatibility": ">=2.0.0",
   "sdk": 2,
@@ -7,7 +7,7 @@
     "en": "Samsung Multiroom"
   },
   "description": {
-    "en": "Control Samsung multiroom speakers and soundbars"
+    "en": "Control Samsung Multiroom speakers and soundbars"
   },
   "category": [
     "music"
@@ -59,7 +59,7 @@
     {
       "id": "samsung",
       "name": {
-        "en": "Samsung multiroom"
+        "en": "Samsung Multiroom"
       },
       "class": "speaker",
       "capabilities": [
@@ -99,7 +99,7 @@
       "type": "ssdp",
       "id": "{{headers.usn}}",
       "ssdp": {
-        "search": "urn:samsung.com:device:RemoteControlReceiver:1"
+        "search": "urn:dial-multiscreen-org:device:dialreceiver:1"
       },
       "conditions": [
         [
@@ -107,7 +107,7 @@
             "field": "headers.st",
             "match": {
               "type": "string",
-              "value": "urn:samsung.com:device:RemoteControlReceiver:1"
+              "value": "urn:dial-multiscreen-org:device:dialreceiver:1"
             }
           }
         ]

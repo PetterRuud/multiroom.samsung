@@ -7,6 +7,11 @@ const SOURCES = {
   BLUETOOTH: 'bt',
 };
 
+const TYPE = {
+  SPEAKER: 'speaker',
+  SOUNDBAR: 'soundbar',
+};
+
 const CHANNELS = {
   Pandora: '0',
   Spotify: '1',
@@ -35,13 +40,22 @@ const CHANNELS = {
   TuneIn: '99',
 };
 
+const SOFTWARE = {
+  SOUNDPLUS: 'SoundPlus',
+  STANDARD: 'Standard',
+};
+
 const PORT = 55001;
 
 const MAXVOLUME = 100;
+const VOLUMESCALE = software => (software === SOFTWARE.SOUNDPLUS ? 60 : 30);
 
 module.exports = {
   SOURCES,
   CHANNELS,
   PORT,
   MAXVOLUME,
+  TYPE,
+  SOFTWARE,
+  VOLUMESCALE,
 };

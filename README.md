@@ -31,7 +31,7 @@ http://192.168.1.25:55001/ # soundbar
 "version": "2.0.25",
 "device": {
   "type": "Samsung Speaker",
-  "duid": "7591IIN4RWD1J",
+  "duid": "333",
   "model": "Linux arm",
   "modelName": "Linux arm",
   "description": "Linux arm on ARMv7 Processor rev 5 (v7l)",
@@ -41,7 +41,7 @@ http://192.168.1.25:55001/ # soundbar
   "firmwareVersion": "3.10.30",
   "name": "[AV] Soundbar",
   "id": "7591IIN4RWD1J",
-  "udn": "2a3a34a0-1dd2-11b2-bb52-21814d28b9fe",
+  "udn": "2222",
   "resolution": "1920x1080",
   "countryCode": "US",
   "msfVersion": "2.0.25",
@@ -52,3 +52,47 @@ http://192.168.1.25:55001/ # soundbar
 "remote": "0",
 "isSupport": "{\"remote_available\":\"false\",\"remote_fourDirections\":\"false\",\"remote_touchPad\":\"false\",\"remote_voiceControl\":\"false\",\"DMP_available\":\"true\",\"DMP_DRM_PLAYREADY\":\"false\",\"DMP_DRM_WIDEVINE\":\"false\"}"
 }
+
+GetSpkName
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+	<method>SpkName</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.70</speakerip>
+	<user_identifier></user_identifier>
+	<response result="ok">
+		<spkname>
+			<![CDATA[[Samsung] M7 L]]>
+		</spkname>
+	</response>
+</UIC>
+GetFunc
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+	<method>CurrentFunc</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.25</speakerip>
+	<user_identifier></user_identifier>
+	<response result="ok">
+		<function>wifi</function>
+		<submode>device</submode> // subdevice
+		<connection></connection>
+		<devicename>
+			<![CDATA[]]>
+		</devicename>
+	</response>
+</UIC>
+
+GetGroupName
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+	<method>GroupName</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.250</speakerip>
+	<user_identifier></user_identifier>
+	<response result="ok">
+		<groupname>
+			<![CDATA[Soundbar]]>
+		</groupname>
+	</response>
+</UIC>
