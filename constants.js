@@ -52,7 +52,6 @@ const ERROR = {
 const PORT = 55001;
 
 const MAXVOLUME = 100;
-const VOLUMESCALE = software => (software === SOFTWARE.SOUNDPLUS ? 60 : 30);
 
 module.exports = {
   SOURCES,
@@ -61,6 +60,5 @@ module.exports = {
   MAXVOLUME,
   TYPE,
   SOFTWARE,
-  VOLUMESCALE,
   ERROR,
 };
