@@ -7,9 +7,9 @@ const SOURCES = {
   BLUETOOTH: 'bt',
 };
 
-const TYPE = {
-  SPEAKER: 'speaker',
-  SOUNDBAR: 'soundbar',
+const MODE = {
+  DLNA: 'dlna',
+  CP: 'cp',
 };
 
 const CHANNELS = {
@@ -40,9 +40,26 @@ const CHANNELS = {
   TuneIn: '99',
 };
 
+const HARDWARE = {
+  SOUNDBAR: 'soundbar',
+  SPEAKER: 'speaker',
+};
+
 const SOFTWARE = {
   SOUNDPLUS: 'SoundPlus',
   STANDARD: 'Standard',
+};
+
+const STATUS = {
+  PLAYING: 'playing',
+  PAUSED: 'paused',
+  STOPPED: 'stopped',
+  ON: 'on',
+  OFF: 'off',
+  ONE: 'one',
+  ONEINT: '1',
+  ZEROINT: '0',
+  INACTIVE: 'inactive',
 };
 
 const ERROR = {
@@ -58,7 +75,9 @@ module.exports = {
   CHANNELS,
   PORT,
   MAXVOLUME,
-  TYPE,
   SOFTWARE,
   ERROR,
+  MODE,
+  HARDWARE,
+  STATUS,
 };
