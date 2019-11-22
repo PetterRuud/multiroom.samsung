@@ -1,0 +1,127 @@
+{
+  "id": "multiroom.samsung",
+  "version": "0.0.1",
+  "compatibility": ">=3.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "Samsung Multiroom",
+    "no": "Samsung Multiroom"
+  },
+  "description": {
+    "en": "Control Samsung Multiroom speakers and soundbars",
+    "no": "Kontroller Samsung Multiroom høytalere og lydplanker"
+  },
+  "category": [
+    "music"
+  ],
+  "tags": {
+    "en": [
+      "Samsung",
+      "Multiroom"
+    ],
+    "no": [
+      "Samsung",
+      "Multiroom"
+    ]
+  },
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Petter Ruud",
+    "email": "petterruud@gmail.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "petterruud"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/PetterRuud/multiroom.samsung/issues"
+  },
+  "source": "https://github.com/PetterRuud/multiroom.samsung",
+  "flow": {
+    "actions": [
+      {
+        "id": "play_aux_in",
+        "title": {
+          "en": "Play AUX In",
+          "no": "Bruk AUX In"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=samsung"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "id": "samsung",
+      "name": {
+        "en": "Samsung Multiroom",
+        "no": "Samsung Multiroom"
+      },
+      "class": "speaker",
+      "capabilities": [
+        "speaker_track",
+        "speaker_album",
+        "speaker_artist",
+        "speaker_prev",
+        "speaker_next",
+        "speaker_position",
+        "speaker_repeat",
+        "speaker_shuffle",
+        "speaker_playing",
+        "volume_set",
+        "volume_up",
+        "volume_down",
+        "volume_mute"
+      ],
+      "images": {
+        "large": "/drivers/samsung/assets/images/large.jpg",
+        "small": "/drivers/samsung/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ]
+    }
+  ],
+  "discovery": {
+    "samsung": {
+      "type": "ssdp",
+      "id": "{{headers.usn}}",
+      "ssdp": {
+        "search": "urn:dial-multiscreen-org:device:dialreceiver:1"
+      },
+      "conditions": [
+        [
+          {
+            "field": "headers.st",
+            "match": {
+              "type": "string",
+              "value": "urn:dial-multiscreen-org:device:dialreceiver:1"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
