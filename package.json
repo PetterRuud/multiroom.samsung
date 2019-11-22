@@ -4,7 +4,10 @@
   "description": "Support Samsung Multiroom Speakers",
   "main": "app.js",
   "scripts": {
-    "start": "athom app run",
+    "start": "homey app run",
+    "start:clean": "homey app run -c",
+    "install": "homey app install",
+    "install:clean": "homey app install -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Petter Ruud",

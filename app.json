@@ -43,9 +43,7 @@
   "bugs": {
     "url": "https://github.com/PetterRuud/multiroom.samsung/issues"
   },
-  "source": {
-    "url": "https://github.com/PetterRuud/multiroom.samsung"
-  },
+  "source": "https://github.com/PetterRuud/multiroom.samsung",
   "flow": {
     "actions": [
       {
@@ -83,6 +81,8 @@
         "speaker_shuffle",
         "speaker_playing",
         "volume_set",
+        "volume_up",
+        "volume_down",
         "volume_mute"
       ],
       "images": {
