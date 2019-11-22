@@ -1,19 +1,25 @@
 {
   "id": "multiroom.samsung",
   "version": "0.0.1",
-  "compatibility": ">=2.0.0",
+  "compatibility": ">=3.0.0",
   "sdk": 2,
   "name": {
-    "en": "Samsung Multiroom"
+    "en": "Samsung Multiroom",
+    "no": "Samsung Multiroom"
   },
   "description": {
-    "en": "Control Samsung Multiroom speakers and soundbars"
+    "en": "Control Samsung Multiroom speakers and soundbars",
+    "no": "Kontroller Samsung Multiroom høytalere og lydplanker"
   },
   "category": [
     "music"
   ],
   "tags": {
     "en": [
+      "Samsung",
+      "Multiroom"
+    ],
+    "no": [
       "Samsung",
       "Multiroom"
     ]
@@ -35,7 +41,10 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/PetterRuud/com.scinan.api/issues"
+    "url": "https://github.com/PetterRuud/multiroom.samsung/issues"
+  },
+  "source": {
+    "url": "https://github.com/PetterRuud/multiroom.samsung"
   },
   "flow": {
     "actions": [
@@ -43,7 +52,7 @@
         "id": "play_aux_in",
         "title": {
           "en": "Play AUX In",
-          "nl": "Speel AUX In"
+          "no": "Bruk AUX In"
         },
         "args": [
           {
@@ -59,7 +68,8 @@
     {
       "id": "samsung",
       "name": {
-        "en": "Samsung Multiroom"
+        "en": "Samsung Multiroom",
+        "no": "Samsung Multiroom"
       },
       "class": "speaker",
       "capabilities": [
