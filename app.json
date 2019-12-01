@@ -43,9 +43,7 @@
   "bugs": {
     "url": "https://github.com/PetterRuud/multiroom.samsung/issues"
   },
-  "support": {
-    "url": "https://github.com/PetterRuud/multiroom.samsung/issues"
-  },
+  "support": "https://github.com/PetterRuud/multiroom.samsung/issues",
   "source": "https://github.com/PetterRuud/multiroom.samsung",
   "flow": {
     "actions": [
