@@ -2,6 +2,8 @@
 
 Control Samsung multiroom speakers and soundbars
 
+## This repo is no longer maintained, reach out if you want to take over
+
 ## sources
 
 https://sites.google.com/site/moosyresearch/projects/samsung_shape
